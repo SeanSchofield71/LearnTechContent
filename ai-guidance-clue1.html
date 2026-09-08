@@ -1,17 +1,211 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Mission Brief</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Guidance: Mission Introduction</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #eef4f6;
+            color: #1f2933;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        main {
+            width: 100%;
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            min-height: 100vh;
+        }
+
+        .mission-header {
+            padding: 40px 24px;
+            background-color: #086b99;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .ai-graphic {
+            width: 110px;
+            height: 110px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            color: #086b99;
+            border: 5px solid #bde5f5;
+            border-radius: 50%;
+            font-size: 38px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            line-height: 1.2;
+        }
+
+        .mission-label {
+            margin: 10px 0 0;
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: bold;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .content {
+            padding: 32px 24px;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #086b99;
+            font-size: 1.6rem;
+            line-height: 1.3;
+        }
+
+        .key-message {
+            margin: 26px 0;
+            padding: 20px;
+            background-color: #e8f5fa;
+            border-left: 6px solid #086b99;
+        }
+
+        .key-message p {
+            margin: 0;
+        }
+
+        .mission-start {
+            margin-top: 32px;
+            padding: 24px;
+            background-color: #17324d;
+            color: #ffffff;
+            border-radius: 8px;
+        }
+
+        .mission-start h2 {
+            margin-bottom: 12px;
+            color: #ffffff;
+        }
+
+        .mission-start p:last-child {
+            margin-bottom: 0;
+        }
+
+        .status {
+            display: inline-block;
+            margin-bottom: 10px;
+            padding: 5px 10px;
+            background-color: #d9f0e4;
+            color: #174d33;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                font-size: 17px;
+            }
+
+            .mission-header {
+                padding: 30px 18px;
+            }
+
+            .content {
+                padding: 26px 20px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .ai-graphic {
+                width: 90px;
+                height: 90px;
+                font-size: 32px;
+            }
+        }
+    </style>
 </head>
+
 <body>
+    <main>
+        <header class="mission-header">
+            <div class="ai-graphic" aria-hidden="true">AI</div>
 
-<h1>Welcome Agent</h1>
+            <p class="mission-label">Mission Briefing</p>
 
-<p>Your mission begins here.</p>
+            <h1>Understanding Artificial Intelligence</h1>
+        </header>
 
-<p>The code word is:</p>
+        <section class="content" aria-labelledby="introduction-heading">
+            <span class="status">Mission status: Active</span>
 
-<h2>RUBY</h2>
+            <h2 id="introduction-heading">What is artificial intelligence?</h2>
 
+            <p>
+                Artificial intelligence, usually shortened to AI, is the
+                simulation of human intelligence by machines.
+            </p>
+
+            <p>
+                AI systems can learn, reason, solve problems and understand
+                language.
+            </p>
+
+            <div class="key-message">
+                <p>
+                    <strong>As a student, AI can support your learning</strong>
+                    by providing more personalised learning experiences,
+                    helping with some administrative tasks and complementing
+                    your research skills.
+                </p>
+            </div>
+
+            <p>
+                AI can also help you explore difficult theories and subjects.
+                For example, it can break complex concepts down into simpler,
+                easier-to-understand explanations.
+            </p>
+
+            <p>
+                Used appropriately, AI can make learning new knowledge and
+                skills more engaging and enjoyable.
+            </p>
+
+            <section class="mission-start" aria-labelledby="mission-heading">
+                <h2 id="mission-heading">Your mission begins</h2>
+
+                <p>
+                    AI can be a powerful learning tool, but using it effectively
+                    requires more than simply knowing what it can do.
+                </p>
+
+                <p>
+                    During this mission, you will uncover the principles that
+                    can help students use AI responsibly, safely and
+                    effectively.
+                </p>
+
+                <p>
+                    <strong>Stay alert. Your first clue is waiting.</strong>
+                </p>
+            </section>
+        </section>
+    </main>
 </body>
 </html>
