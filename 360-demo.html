@@ -1,24 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Hero Cave 360</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.7/build/pannellum.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/pannellum/">
 
-    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.7/build/pannellum.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/pannellum/"
+    </script>
 
     <style>
-       height: 100%;
+        html,
+        body {
+            width: 100%;
+            height: 100%;
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background: black;
+            background-color: #000000;
         }
 
         #panorama {
-            width: 100%;
+            width: 100vw;
             height: 100vh;
         }
     </style>
@@ -26,16 +35,26 @@
 
 <body>
 
-<div id="panorama"></div>
+    <div id="panorama"></div>
 
-<script>
-    pannellum.viewer('panorama', {
-        type: 'equirectangular',
-        panorama: 'Hero cave.png',
-        autoLoad: true,
-        showControls: true
-    });
-</script>
+    <script>
+        pannellum.viewer("panorama", {
+            type: "equirectangular",
+            panorama: "Hero cave.png",
+            autoLoad: true,
+            showControls: true,
+            compass: false,
+            pitch: 0,
+            yaw: 0,
+            hfov: 100,
+            minHfov: 40,
+            maxHfov: 120,
+            mouseZoom: true,
+            draggable: true,
+            keyboardZoom: true
+        });
+    </script>
 
 </body>
+
 </html>
