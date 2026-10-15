@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Hero Cave 360</title>
+
+  https://cdn.jsdelivr.net/npm/pannellum@2.5.7/build/pannellum.min.css
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/pannellum@2.um.min.js  </script>
+
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      background: #000;
+    }
+
+    #panorama {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="panorama"></div>
+
+  <script>
+    pannellum.viewer("panorama", {
+      type: "equirectangular",
+      panorama: "Hero cave.png",
+      autoLoad: true,
+      showControls: true,
+      compass: false,
+      pitch: 0,
+      yaw: 0,
+      hfov: 100,
+      minHfov: 45,
+      maxHfov: 120,
+      mouseZoom: true,
+      draggable: true,
+      keyboardZoom: true
+    });
+  </script>
+</body>
+</html>
