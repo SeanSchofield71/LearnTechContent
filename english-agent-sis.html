@@ -4,58 +4,61 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>English Intelligence | File 03</title>
+<title>English Intelligence | SIS</title>
 
 <style>
-
 * {
     box-sizing: border-box;
 }
 
-body {
+html, body {
     margin: 0;
+    min-height: 100%;
     background: #07111c;
+}
+
+body {
     color: #e8edf2;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.65;
+    line-height: 1.4;
 }
 
 .page {
     max-width: 760px;
     margin: 0 auto;
-    padding: 32px 22px 60px;
+    padding: 18px 18px 22px;
 }
 
 .header {
     border-bottom: 1px solid #9e7c3d;
-    padding-bottom: 20px;
-    margin-bottom: 28px;
+    padding-bottom: 11px;
+    margin-bottom: 14px;
 }
 
 .classification {
     color: #d6b56e;
-    font-size: 0.78rem;
-    letter-spacing: 0.18em;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
     font-weight: bold;
 }
 
 h1 {
-    font-size: 1.55rem;
-    margin: 8px 0 4px;
+    font-size: 1.35rem;
+    margin: 5px 0 1px;
     letter-spacing: 0.03em;
 }
 
 .subtitle {
     color: #9eabb8;
-    font-size: 0.9rem;
+    font-size: 0.78rem;
 }
 
 .meta {
     background: #0d1a27;
     border-left: 3px solid #9e7c3d;
-    padding: 18px;
-    margin-bottom: 30px;
-    font-size: 0.9rem;
+    padding: 9px 12px;
+    margin-bottom: 14px;
+    font-size: 0.78rem;
 }
 
 .meta strong {
@@ -63,72 +66,82 @@ h1 {
 }
 
 h2 {
-    font-size: 1rem;
-    letter-spacing: 0.08em;
+    font-size: 0.78rem;
+    letter-spacing: 0.09em;
     color: #d6b56e;
-    margin-top: 32px;
+    margin: 12px 0 7px;
 }
 
 .report {
     background: #f0ede5;
     color: #171717;
-    padding: 24px;
-    margin: 18px 0 30px;
-    border-radius: 2px;
+    padding: 14px 16px;
+    margin: 0 0 12px;
+    border-radius: 3px;
+    font-size: 0.92rem;
 }
 
-.log-entry {
-    margin-bottom: 20px;
+.service {
+    margin-bottom: 10px;
 }
 
-.log-time {
+.service:last-child {
+    margin-bottom: 0;
+}
+
+.time {
     font-weight: bold;
     color: #735517;
-    margin-bottom: 3px;
-}
-
-.intel-note {
-    border-top: 1px solid #435363;
-    border-bottom: 1px solid #435363;
-    padding: 8px 0 22px;
-    margin-top: 30px;
 }
 
 .mark {
-    margin-top: 38px;
     text-align: center;
     border: 1px solid #9e7c3d;
-    padding: 25px 20px;
+    padding: 9px 12px;
     background: #0d1a27;
 }
 
 .mark-label {
     color: #9eabb8;
-    font-size: 0.75rem;
-    letter-spacing: 0.14em;
+    font-size: 0.63rem;
+    letter-spacing: 0.13em;
 }
 
 .mark-code {
     font-family: Georgia, serif;
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     letter-spacing: 0.18em;
     color: #d6b56e;
-    margin: 5px 0;
+    margin: 1px 0;
 }
 
 .mark-note {
-    font-size: 0.85rem;
+    font-size: 0.7rem;
     color: #abb5bf;
 }
 
 .footer {
     text-align: center;
     color: #657381;
-    font-size: 0.72rem;
-    margin-top: 42px;
+    font-size: 0.58rem;
+    margin-top: 12px;
     letter-spacing: 0.08em;
 }
 
+@media (max-width: 480px) {
+    .page {
+        padding: 14px 14px 18px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .report {
+        font-size: 0.88rem;
+        padding: 12px 14px;
+    }
+}
 </style>
 </head>
 
@@ -137,84 +150,56 @@ h2 {
 <div class="page">
 
     <div class="header">
-        <div class="classification">ENGLISH INTELLIGENCE // CLASSIFIED</div>
+        <div class="classification">
+            ENGLISH INTELLIGENCE // CLASSIFIED
+        </div>
+
         <h1>INTELLIGENCE FILE 03</h1>
-        <div class="subtitle">RAIL OPERATIONS SECURITY LOG</div>
+
+        <div class="subtitle">
+            RAIL OPERATIONS SECURITY LOG
+        </div>
     </div>
 
     <div class="meta">
-        <strong>REF:</strong> EIL-61/ECHO<br>
-        <strong>STATUS:</strong> RESTRICTED<br>
-        <strong>SOURCE:</strong> Rail Operations Liaison<br>
-        <strong>LOCATION:</strong> London Central Terminus<br>
-        <strong>PERIOD:</strong> 22:00–23:30
+        <strong>REF:</strong> EIL-61/ECHO &nbsp;|&nbsp;
+        <strong>PERIOD:</strong> 22:00–23:30<br>
+        <strong>LOCATION:</strong> LONDON CENTRAL TERMINUS
     </div>
 
     <h2>SECURITY LOG EXTRACT</h2>
 
     <div class="report">
 
-        <p>Following an earlier security alert, late-evening departures from the station were subject to additional monitoring.</p>
-
-        <div class="log-entry">
-            <div class="log-time">22:18</div>
-            The 22:30 northbound service to <strong>Birmingham</strong> was moved from Platform 8 to Platform 11 following a signalling issue. Passengers were redirected through the main concourse.
+        <div class="service">
+            <span class="time">22:30 – BIRMINGHAM</span><br>
+            Northbound service. Platform changed after a signalling issue.
         </div>
 
-        <div class="log-entry">
-            <div class="log-time">22:24</div>
-            A passenger travelling on the 22:42 service to <strong>Manchester</strong> reported an unattended suitcase. The platform was temporarily closed while security staff investigated. The item was later identified as harmless.
+        <div class="service">
+            <span class="time">22:42 – MANCHESTER</span><br>
+            Northbound service. Delayed while security checked an unattended suitcase.
         </div>
 
-        <div class="log-entry">
-            <div class="log-time">22:31</div>
-            Station staff reported that a reservation had been created earlier that evening for the <strong>23:05 overnight service to Inverness</strong>. The booking had been made through an authorised travel account rather than directly by the passenger.
+        <div class="service">
+            <span class="time">23:05 – INVERNESS</span><br>
+            Northbound overnight service. An unnamed reservation was made earlier through another travel account. The travel document was to be delivered inside the station.
         </div>
-
-        <p>The reservation contained <strong>no passenger name</strong>.</p>
-
-        <p>Collection instructions stated that the travel document was to be delivered <strong>inside the station rather than collected from the ticket office</strong>.</p>
-
-        <div class="log-entry">
-            <div class="log-time">22:36</div>
-            Platform information for the overnight service was temporarily removed from the public departure boards at the request of station security.
-        </div>
-
-        <div class="log-entry">
-            <div class="log-time">22:41</div>
-            The 22:42 Manchester service departed following the earlier security check.
-        </div>
-
-        <div class="log-entry">
-            <div class="log-time">23:05</div>
-            The overnight service departed northbound.
-        </div>
-
-    </div>
-
-    <div class="intel-note">
-
-        <h2>INTELLIGENCE NOTE</h2>
-
-        <p>Anonymous reservations are unusual but not sufficient evidence of wrongdoing.</p>
-
-        <p>The 23:05 service carries passengers through the night and makes several stops before reaching its final destination.</p>
-
-        <p>Investigators have found <strong>no passenger record identifying Morgan by name.</strong></p>
-
-        <p>Whether this journey is connected to the intercepted operation <strong>cannot be established from the rail information alone.</strong></p>
 
     </div>
 
     <div class="mark">
 
-        <div class="mark-label">RECOVERED CLASSIFICATION MARK</div>
+        <div class="mark-label">
+            RECOVERED CLASSIFICATION MARK
+        </div>
 
-        <div class="mark-code">SIS</div>
+        <div class="mark-code">
+            SIS
+        </div>
 
         <div class="mark-note">
-            This marking does not correspond with any known Ministry classification code.<br>
-            Its significance remains unclear.
+            Record this fragment. Its significance remains unknown.
         </div>
 
     </div>
